@@ -1,0 +1,127 @@
+
+browser {
+	border: 1px solid #EC4935 !important;
+	margin-top: 5px;
+}
+
+#TabsToolbar{
+	margin-right: 10px;
+}
+
+#nav-bar, #titlebar {
+	background-color: #282828 !important;
+}
+
+/* Target the text of tabs and bookmarks in the vertical sidebar */
+.tab-text, 
+.tab-label, 
+.sidebar-item, 
+.bookmark-item > .toolbarbutton-text {
+	color: #F1E8C2 !important;
+}
+
+#zen-media-controls-toolbar > toolbaritem {
+  border-radius: 0 !important;
+  background-color: #282828 !important;
+	border: 1px solid #EC4935 !important;
+
+  &:hover {
+		border-radius: 0 !important;
+		background-color: #282828 !important;
+    box-shadow: 0;
+		border: 1px solid #EC4935 !important;
+  }
+}
+
+#zen-media-controls-toolbar > toolbaritem::before {
+	content: "Media";
+	position: fixed;
+	color: #EC4935;
+	position: absolute;
+	margin: -13px -1px;
+	padding: 0 3px;
+	z-index: 3;
+	background: #282828;
+}
+
+/* URL bar background - default state */
+.urlbar-background {
+	background-color: #3D3A37 !important;
+	border-radius: 0px !important;
+	border: 1px solid #EC4935 !important;
+	backdrop-filter: 0px;
+	transition: background-color 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.tab-context-line {
+  display: none !important;
+}
+
+.zen-essentials-container {
+  &[data-hack-type="1"] {
+		padding-top: 10px !important;
+		padding-left: 10px !important;
+		padding-right: 10px !important;
+  }
+}
+
+
+#tabbrowser-tabs {
+	border: 1px solid #EC4935 !important;
+	margin-top: 5px;
+	margin-bottom: 15px
+}
+
+#tabbrowser-tabs::before {
+	content: "Tabs";
+	position: fixed;
+	color: #EC4935;
+	position: absolute;
+	margin: -10px 4px;
+	padding: 0 3px;
+	z-index: 3;
+	background: #282828;
+}
+
+
+/* NEW TAB SETTINGS */
+#tabs-newtab-button.toolbarbutton-1 {
+  position: relative;
+  background: transparent !important;
+}
+
+#tabs-newtab-button.toolbarbutton-1::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: transparent;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+#tabs-newtab-button.toolbarbutton-1:hover::before {
+	border: 1px solid #EC4935 !important;
+	cursor: pointer;
+}
+
+
+.pinned-tabs-container-separator {
+  & toolbarseparator {
+    background: #EC4935 !important;
+  }
+}
+
+.zen-workspace {
+	padding-top: 162px !important;
+}
+
+.zen-workspace-tabs-section {
+  &:not(.zen-current-workspace-indicator):not(.zen-essentials-container) {
+		padding-left: 10px !important;
+    padding-right: 10px !important;
+	}	
+
+.titlebar-close {
+  pointer-events: none !important;
+  visibility: hidden !important;
+}
+
