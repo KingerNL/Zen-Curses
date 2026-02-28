@@ -5,9 +5,7 @@
     </a>
 </div>
 
-<div align="center">
-  <img src="https://cdn.discordapp.com/attachments/1458522341221994518/1458522341519921332/screenshot-2026-01-07_18-58-40.png?ex=6961ec88&is=69609b08&hm=09f8478c0a34087319988f81cda2f66597b8c2fa83d026415616111f9ef4ce86&" width="800" />
-</div>
+![example-1](./misc/example-1.png)
 
 <h2 align="left">What is Zencurses?</h2>
 
