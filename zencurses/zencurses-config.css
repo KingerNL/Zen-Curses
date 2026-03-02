@@ -5,12 +5,77 @@ browser {
 }
 
 #TabsToolbar{
-	margin-right: 10px;
+	margin-right: 0px;
 }
 
 #nav-bar, #titlebar {
 	background-color: #282828 !important;
 }
+
+.toolbarbutton-1,
+#back-button,
+#forward-button,
+#reload-button,
+#zen-sidebar-foot-buttons,
+#PanelUI-button {
+	color: #BDAE93 !important;
+}
+
+.toolbarbutton-1:hover,
+#back-button:hover,
+#forward-button:hover,
+#reload-button:hover,
+#zen-sidebar-foot-buttons:hover,
+#PanelUI-button:hover {
+	color: #EC4935 !important;
+	cursor: pointer;
+}
+
+#zen-sidebar-splitter {
+	border-radius: 0px;
+	margin-right: 4px;
+	margin-left: 4px;
+	margin-top: 10%;
+	height: 80% !important;
+  &:hover {
+    background: #71695D !important;
+  }
+}
+
+.urlbar {
+  --urlbarView-separator-color: #EC4935 !important;
+}
+
+panel,
+menupopup {
+	&::part(content) {
+		border-radius: 0px !important;
+		border: 1px solid #EC4935 !important;
+	}
+}
+
+.urlbarView-row-inner {
+  :root:not([uidensity="compact"]) & {
+    min-height: 20px;
+    color: #BDAE93;
+  }
+}
+
+.titlebar-buttonbox-container {
+	color: #BDAE93 !important;
+}
+
+.panel-viewcontainer {
+	background-color: #282828;
+}
+
+panel:where([type="arrow"]) {
+  &.panel-no-padding::part(content) {
+    padding: 0;
+    border-radius: 0px;
+  }
+}
+
 
 /* Target the text of tabs and bookmarks in the vertical sidebar */
 .tab-text, 
@@ -51,6 +116,10 @@ browser {
 	border: 1px solid #EC4935 !important;
 	backdrop-filter: 0px;
 	transition: background-color 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.urlbar-input-container {
+	color: #BDAE93 !important;
 }
 
 .tab-context-line {
