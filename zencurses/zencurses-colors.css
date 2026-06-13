@@ -1,8 +1,26 @@
 
 :root {
 	--primary-bg-color: #282828 !important;
-	--primary-border-color: #EC4935 !important;
+	--primary-border-color: #ec5440 !important;
+  --primary-accent-color: #ec5440 !important;
+  --zen-colors-primary: #282828 !important;
+  --zen-colors-secondary: #282828 !important;
+  --zen-colors-tertiary: #282828 !important;
+  --zen-colors-border: #ec5440 !important;
   --zen-main-browser-background: #282828 !important;
-	--arrowpanel-color: #F1E8C2 !important;
-	--primary-fg-color: green !important;
+	--zen-main-browser-background-old: #282828 !important;
+	--zen-main-browser-background-toolbar: #282828 !important;
+	--zen-main-browser-background-toolbar-old: #282828 !important;
+	--zen-navigator-toolbox-background: #282828 !important;
+	--zen-themed-toolbar-bg-transparent: #282828 !important;
+	--zen-background-opacity: 1 !important;
+	--zen-primary-color: #ec5440 !important;
+	--zen-webview-background: #282828 !important;
+	--zen-webview-border-color: #ec5440 !important;
+	--zen-webview-border-radius: 0 !important;
+	--newtab-background-color: #282828 !important;
+	--newtab-background-color-secondary: #282828 !important;
+	--in-content-page-background: #282828 !important;
+	--arrowpanel-color: #ebdbb2 !important;
+	--primary-fg-color: #ebdbb2 !important;
 }

@@ -1,0 +1,36 @@
+@-moz-document url("about:newtab"), url("about:home"), url("about:blank") {
+	:root {
+		--newtab-background-color: #282828 !important;
+		--newtab-background-color-secondary: #282828 !important;
+		--in-content-page-background: #282828 !important;
+		--in-content-page-color: #ebdbb2 !important;
+		--in-content-primary-button-background: #ec5440 !important;
+		background-color: #282828 !important;
+		color: #ebdbb2 !important;
+	}
+
+	html,
+	body,
+	.activity-stream,
+	.outer-wrapper,
+	body::before {
+		background-color: #282828 !important;
+		color: #ebdbb2 !important;
+	}
+
+	a,
+	button,
+	input,
+	textarea,
+	select {
+		color: #ebdbb2 !important;
+		accent-color: #ec5440 !important;
+	}
+
+	button,
+	input,
+	textarea,
+	select {
+		border-color: #ec5440 !important;
+	}
+}

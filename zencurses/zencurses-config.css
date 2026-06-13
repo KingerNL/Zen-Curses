@@ -1,7 +1,52 @@
 
 browser {
-	border: 1px solid #EC4935 !important;
+	border: 1px solid #ec5440 !important;
+	background-color: #282828 !important;
+	color: #ebdbb2 !important;
 	margin-top: 5px;
+}
+
+#main-window,
+body,
+#zen-main-app-wrapper,
+#zen-browser-background,
+#zen-browser-background::before,
+#zen-browser-background::after,
+.zen-browser-generic-background,
+.zen-browser-generic-background::before,
+.zen-browser-generic-background::after,
+#browser,
+#appcontent,
+#navigator-toolbox,
+#zen-appcontent-wrapper,
+#zen-appcontent-navbar-wrapper,
+#zen-appcontent-navbar-container,
+#zen-tabbox-wrapper,
+#tabbrowser-tabpanels > *,
+#tabbrowser-tabbox,
+#tabbrowser-tabpanels,
+.browserContainer,
+.browserSidebarContainer,
+.browserSidebarContainer > *,
+.browserStack,
+.browserStack > *,
+.browserStack browser,
+browser[transparent="true"],
+#browser:has([zen-empty-tab="true"][selected="true"]) .browserStack {
+	background: #282828 !important;
+	background-color: #282828 !important;
+	color: #ebdbb2 !important;
+}
+
+#tabbrowser-tabpanels:not([zen-split-view="true"]) {
+	background: #282828 !important;
+	padding: 0 !important;
+}
+
+#tabbrowser-tabpanels browser,
+#tabbrowser-tabpanels .browserStack,
+#tabbrowser-tabpanels .browserContainer {
+	box-shadow: 0 0 0 100vmax #282828 !important;
 }
 
 #TabsToolbar{
@@ -10,6 +55,7 @@ browser {
 
 #nav-bar, #titlebar {
 	background-color: #282828 !important;
+	color: #ebdbb2 !important;
 }
 
 .toolbarbutton-1,
@@ -18,7 +64,7 @@ browser {
 #reload-button,
 #zen-sidebar-foot-buttons,
 #PanelUI-button {
-	color: #BDAE93 !important;
+	color: #ebdbb2 !important;
 }
 
 .toolbarbutton-1:hover,
@@ -27,46 +73,61 @@ browser {
 #reload-button:hover,
 #zen-sidebar-foot-buttons:hover,
 #PanelUI-button:hover {
-	color: #EC4935 !important;
+	color: #ec5440 !important;
 	cursor: pointer;
 }
 
 #zen-sidebar-splitter {
+	background: #ec5440 !important;
+	border: none !important;
 	border-radius: 0px;
+	max-width: 1px !important;
+	min-width: 1px !important;
+	opacity: 1 !important;
+	width: 1px !important;
 	margin-right: 4px;
 	margin-left: 4px;
 	margin-top: 10%;
 	height: 80% !important;
   &:hover {
-    background: #71695D !important;
+    background: #ec5440 !important;
   }
 }
 
+#zen-sidebar-splitter::before,
+.zen-split-view-splitter::before {
+	background: #ec5440 !important;
+	width: 1px !important;
+}
+
 .urlbar {
-  --urlbarView-separator-color: #EC4935 !important;
+  --urlbarView-separator-color: #ec5440 !important;
 }
 
 panel,
 menupopup {
 	&::part(content) {
 		border-radius: 0px !important;
-		border: 1px solid #EC4935 !important;
+		border: 1px solid #ec5440 !important;
+		background-color: #282828 !important;
+		color: #ebdbb2 !important;
 	}
 }
 
 .urlbarView-row-inner {
   :root:not([uidensity="compact"]) & {
     min-height: 20px;
-    color: #BDAE93;
+    color: #ebdbb2;
   }
 }
 
 .titlebar-buttonbox-container {
-	color: #BDAE93 !important;
+	color: #ebdbb2 !important;
 }
 
 .panel-viewcontainer {
-	background-color: #282828;
+	background-color: #282828 !important;
+	color: #ebdbb2 !important;
 }
 
 panel:where([type="arrow"]) {
@@ -82,26 +143,26 @@ panel:where([type="arrow"]) {
 .tab-label, 
 .sidebar-item, 
 .bookmark-item > .toolbarbutton-text {
-	color: #F1E8C2 !important;
+	color: #ebdbb2 !important;
 }
 
 #zen-media-controls-toolbar > toolbaritem {
   border-radius: 0 !important;
   background-color: #282828 !important;
-	border: 1px solid #EC4935 !important;
+	border: 1px solid #ec5440 !important;
 
   &:hover {
 		border-radius: 0 !important;
 		background-color: #282828 !important;
     box-shadow: 0;
-		border: 1px solid #EC4935 !important;
+		border: 1px solid #ec5440 !important;
   }
 }
 
 #zen-media-controls-toolbar > toolbaritem::before {
 	content: "Media";
 	position: fixed;
-	color: #EC4935;
+	color: #ec5440;
 	position: absolute;
 	margin: -13px -1px;
 	padding: 0 3px;
@@ -111,15 +172,15 @@ panel:where([type="arrow"]) {
 
 /* URL bar background - default state */
 .urlbar-background {
-	background-color: #3D3A37 !important;
+	background-color: #282828 !important;
 	border-radius: 0px !important;
-	border: 1px solid #EC4935 !important;
+	border: 1px solid #ec5440 !important;
 	backdrop-filter: 0px;
 	transition: background-color 0.3s ease, box-shadow 0.3s ease !important;
 }
 
 .urlbar-input-container {
-	color: #BDAE93 !important;
+	color: #ebdbb2 !important;
 }
 
 .tab-context-line {
@@ -136,7 +197,7 @@ panel:where([type="arrow"]) {
 
 
 #tabbrowser-tabs {
-	border: 1px solid #EC4935 !important;
+	border: 1px solid #ec5440 !important;
 	margin-top: 5px;
 	margin-bottom: 15px
 }
@@ -144,7 +205,7 @@ panel:where([type="arrow"]) {
 #tabbrowser-tabs::before {
 	content: "Tabs";
 	position: fixed;
-	color: #EC4935;
+	color: #ec5440;
 	position: absolute;
 	margin: -10px 4px;
 	padding: 0 3px;
@@ -168,14 +229,14 @@ panel:where([type="arrow"]) {
 }
 
 #tabs-newtab-button.toolbarbutton-1:hover::before {
-	border: 1px solid #EC4935 !important;
+	border: 1px solid #ec5440 !important;
 	cursor: pointer;
 }
 
 
 .pinned-tabs-container-separator {
   & toolbarseparator {
-    background: #EC4935 !important;
+    background: #ec5440 !important;
   }
 }
 
@@ -187,10 +248,10 @@ panel:where([type="arrow"]) {
   &:not(.zen-current-workspace-indicator):not(.zen-essentials-container) {
 		padding-left: 10px !important;
     padding-right: 10px !important;
-	}	
+	}
+}
 
 .titlebar-close {
   pointer-events: none !important;
   visibility: hidden !important;
 }
-
