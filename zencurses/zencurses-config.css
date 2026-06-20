@@ -58,6 +58,18 @@ browser[transparent="true"],
 	color: #ebdbb2 !important;
 }
 
+#zen-appcontent-navbar-wrapper,
+#zen-appcontent-navbar-container,
+#nav-bar {
+	align-items: center !important;
+}
+
+#nav-bar .toolbarbutton-1,
+#urlbar,
+#urlbar-container {
+	transform: translateY(2px) !important;
+}
+
 .toolbarbutton-1,
 #back-button,
 #forward-button,
@@ -302,6 +314,60 @@ panel:where([type="arrow"]) {
   display: none !important;
 }
 
+tab.tabbrowser-tab[selected="true"],
+.tabbrowser-tab[selected="true"] {
+	background-color: #504945 !important;
+	border: 1px solid #ec5440 !important;
+	border-radius: 0 !important;
+	color: #ec5440 !important;
+}
+
+.tabbrowser-tab[selected="true"] .tab-background,
+.tabbrowser-tab[selected="true"] .tab-content {
+	background: transparent !important;
+	border: none !important;
+	border-radius: 0 !important;
+}
+
+.tabbrowser-tab[selected="true"] .tab-text,
+.tabbrowser-tab[selected="true"] .tab-label {
+	color: #ec5440 !important;
+}
+
+.tabbrowser-tab[selected="true"] .tab-close-button,
+.tabbrowser-tab[selected="true"] .close-icon {
+	color: #ec5440 !important;
+	fill: #ec5440 !important;
+}
+
+.zen-essentials-container .tabbrowser-tab[selected="true"],
+.zen-essentials-container tab.tabbrowser-tab[selected="true"] {
+	background: #504945 !important;
+	background-color: #504945 !important;
+	border: 1px solid #ec5440 !important;
+	border-radius: 0 !important;
+	box-shadow: none !important;
+	outline: none !important;
+}
+
+.zen-essentials-container .tabbrowser-tab[selected="true"] .tab-background,
+.zen-essentials-container .tabbrowser-tab[selected="true"] .tab-content,
+.zen-essentials-container .tabbrowser-tab[selected="true"] .tab-stack,
+.zen-essentials-container .tabbrowser-tab[selected="true"] .tab-icon-stack {
+	background: transparent !important;
+	background-color: transparent !important;
+	border: none !important;
+	border-radius: 0 !important;
+	box-shadow: none !important;
+	outline: none !important;
+	opacity: 1 !important;
+}
+
+.zen-essentials-container .tabbrowser-tab[selected="true"] .tab-content {
+	background: #504945 !important;
+	background-color: #504945 !important;
+}
+
 .zen-essentials-container {
   &[data-hack-type="1"] {
 		padding-top: 10px !important;
@@ -357,6 +423,10 @@ panel:where([type="arrow"]) {
 
 .zen-workspace {
 	padding-top: 162px !important;
+}
+
+.zen-current-workspace-indicator-name {
+	color: #b0a589 !important;
 }
 
 .zen-workspace-tabs-section {
