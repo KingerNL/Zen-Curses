@@ -173,7 +173,12 @@ panelmultiview,
 #widget-overflow,
 #unified-extensions-panel,
 #customizationui-widget-panel,
-#BMB_bookmarksPopup {
+#BMB_bookmarksPopup,
+#password-notification,
+#notification-popup,
+#notification-popup-box,
+popupnotification,
+popupnotificationcontent {
 	--arrowpanel-border-color: #e5503e !important;
 	--arrowpanel-border-radius: 0 !important;
 	--arrowpanel-menuitem-border-radius: 0 !important;
@@ -190,6 +195,57 @@ panelmultiview,
 	clip-path: none !important;
 	color: #ebdbb2 !important;
 	filter: none !important;
+}
+
+#password-notification::part(content),
+#notification-popup::part(content),
+popupnotification::part(content),
+popupnotificationcontent {
+	background: #282828 !important;
+	background-color: #282828 !important;
+	border: 1px solid #e5503e !important;
+	border-radius: 0 !important;
+	box-shadow: none !important;
+	color: #ebdbb2 !important;
+}
+
+#password-notification label,
+#password-notification description,
+#password-notification .popup-notification-body,
+#password-notification .popup-notification-body-container,
+#password-notification .popup-notification-description,
+#password-notification .popup-notification-origin,
+#notification-popup label,
+#notification-popup description,
+popupnotification label,
+popupnotification description {
+	background: transparent !important;
+	background-color: transparent !important;
+	color: #ebdbb2 !important;
+}
+
+#password-notification button,
+#password-notification .popup-notification-button,
+#notification-popup button,
+#notification-popup .popup-notification-button,
+popupnotification button,
+popupnotification .popup-notification-button {
+	background: #3c3836 !important;
+	background-color: #3c3836 !important;
+	border: 1px solid #e5503e !important;
+	border-radius: 0 !important;
+	color: #ebdbb2 !important;
+}
+
+#password-notification button:hover,
+#password-notification .popup-notification-button:hover,
+#notification-popup button:hover,
+#notification-popup .popup-notification-button:hover,
+popupnotification button:hover,
+popupnotification .popup-notification-button:hover {
+	background: #504945 !important;
+	background-color: #504945 !important;
+	color: #ec5440 !important;
 }
 
 #contentAreaContextMenu,
@@ -256,6 +312,48 @@ menuseparator {
 	color: #ebdbb2 !important;
 }
 
+.autocomplete-richlistbox,
+.autocomplete-richlistitem,
+richlistbox.autocomplete-richlistbox,
+richlistitem.autocomplete-richlistitem {
+	background: #282828 !important;
+	background-color: #282828 !important;
+	border-color: #e5503e !important;
+	border-radius: 0 !important;
+	box-shadow: none !important;
+	color: #ebdbb2 !important;
+}
+
+.autocomplete-richlistbox {
+	border: 1px solid #e5503e !important;
+}
+
+.autocomplete-richlistitem[selected="true"],
+.autocomplete-richlistitem:hover,
+.autocomplete-richlistitem:hover .ac-login-item,
+.autocomplete-richlistitem[selected="true"] .ac-login-item {
+	background: #3c3836 !important;
+	background-color: #3c3836 !important;
+	color: #ebdbb2 !important;
+}
+
+.autocomplete-richlistitem .ac-login-item,
+.autocomplete-richlistitem .labels-wrapper,
+.autocomplete-richlistitem .label-row,
+.autocomplete-richlistitem .ac-title,
+.autocomplete-richlistitem .ac-url,
+.autocomplete-richlistitem .ac-title-text,
+.autocomplete-richlistitem .ac-url-text {
+	background: transparent !important;
+	background-color: transparent !important;
+	color: #ebdbb2 !important;
+}
+
+.autocomplete-richlistitem .line2-label,
+.autocomplete-richlistitem .ac-url-text {
+	color: #b0a589 !important;
+}
+
 panel:where([type="arrow"]) {
   &.panel-no-padding::part(content) {
     padding: 0;
@@ -314,8 +412,28 @@ panel:where([type="arrow"]) {
   display: none !important;
 }
 
-tab.tabbrowser-tab[selected="true"],
-.tabbrowser-tab[selected="true"] {
+#tabbrowser-tabs .tabbrowser-tab {
+	border: 1px solid transparent !important;
+	border-radius: 0 !important;
+	box-sizing: border-box !important;
+}
+
+.zen-essentials-container .tabbrowser-tab:not([selected="true"]),
+.zen-essentials-container .tabbrowser-tab:not([selected="true"]) .tab-background,
+.zen-essentials-container .tabbrowser-tab:not([selected="true"]) .tab-content,
+.zen-essentials-container .tabbrowser-tab:not([selected="true"]) .tab-stack,
+.zen-essentials-container .tabbrowser-tab:not([selected="true"]) .tab-icon-stack,
+.zen-essentials-container .tabbrowser-tab:not([selected="true"]) .tab-icon-overlay,
+.zen-essentials-container .tabbrowser-tab:not([selected="true"]) .tab-sharing-icon-overlay,
+.zen-essentials-container .tabbrowser-tab:not([selected="true"]) .tab-note-icon-overlay,
+.zen-essentials-container .tabbrowser-tab:not([selected="true"]) .tab-audio-button {
+	background: #3c3836 !important;
+	background-color: #3c3836 !important;
+	border-radius: 0 !important;
+}
+
+#tabbrowser-tabs tab.tabbrowser-tab[selected="true"],
+#tabbrowser-tabs .tabbrowser-tab[selected="true"] {
 	background-color: #504945 !important;
 	border: 1px solid #ec5440 !important;
 	border-radius: 0 !important;
@@ -366,6 +484,19 @@ tab.tabbrowser-tab[selected="true"],
 .zen-essentials-container .tabbrowser-tab[selected="true"] .tab-content {
 	background: #504945 !important;
 	background-color: #504945 !important;
+}
+
+#navigator-toolbox[zen-sidebar-expanded="true"] #tabbrowser-tabs .tabbrowser-tab .tab-icon-overlay[zen-essential="true"] {
+	background: transparent !important;
+	background-color: transparent !important;
+	border: none !important;
+	box-shadow: none !important;
+}
+
+#navigator-toolbox[zen-sidebar-expanded="true"] #tabbrowser-tabs .tabbrowser-tab:hover .tab-icon-overlay[zen-essential="true"] {
+	background: transparent !important;
+	background-color: transparent !important;
+	cursor: pointer !important;
 }
 
 .zen-essentials-container {
